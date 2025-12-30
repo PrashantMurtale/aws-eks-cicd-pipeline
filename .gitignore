@@ -1,0 +1,96 @@
+# AWS EKS CI/CD Pipeline - Git Ignore
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+*.log
+
+# Kubernetes
+*.kubeconfig
+
+# Jenkins
+*.war
+*.ear
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+*.zip
+*.tar.gz
+*.rar
+
+# Trivy reports
+trivy-report.json
+
+# Coverage reports
+test-results.xml
+coverage.xml
